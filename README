@@ -1,0 +1,11 @@
+===Invention Weekly
+Invention Weekly is a programming blog and webcast. Every week on Saturday a stream goes live on http://www.ustream.tv/channel/invention-weekly. The stream involves completely solving a programming problem in the form of an executable program or library and committing the changes to git. The show is a realistic look into the lifetime of a project, featuring README files, packaging, and unit tests.
+-
+
+===Repo Map
+The repository is going to have week{x} folders where x is the week, starting at 0. The DEBIAN file and Build Scripts call all of the Build Scripts within the directories and rely on them to update the Debian file. Build will build the dpkg file so that all of the utilities made in this cast will be easily installable on Debian-based systems (or any system with a working dpkg installation).
+-
+
+===Meta
+There will be a lot of repititious code when comparing this repository to my others. Nothing comes into this repo, nothing leaves it. This means that any libraries I have written prior to and after the filming of the webcast will not enter or leave the repository. The cast would not be interesting if it was just calls to strt and what-not.
+-
